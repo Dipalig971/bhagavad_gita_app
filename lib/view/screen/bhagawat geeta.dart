@@ -43,7 +43,7 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                     ),
                   ),
                   Container(
-                    height: height*5,
+                    height: height*2.55,
                     width: width*0.89,
                     decoration: BoxDecoration(
                         color: Colors.white,
@@ -53,7 +53,7 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                       children: [
                         InkWell(
                           onTap: () {
-                            Navigator.of(context).pushNamed('/geeta');
+                            Navigator.of(context).pushNamed('/geetasholk');
                           },
                           child: Container(
                             margin: const EdgeInsets.only(top: 40,left: 20,right: 20),
@@ -75,12 +75,21 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                                     color: Colors.black38,
                                   ),
                                 ),
-                                SizedBox(width: 20,),
-                                Center(
-                                  child: Text('पहला अध्याय',style: TextStyle(
-                                      fontSize: 40,
-                                      fontWeight: FontWeight.w400
-                                  ),),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 15,horizontal: 15),
+                                  child: Column(
+                                    children: [
+                                    //  SizedBox(width: 20,),
+                                      Text('पहला अध्याय',style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.w400
+                                      ),),
+                                      Text('अर्जुनविषादयोग',style: TextStyle(
+                                          fontSize: 30,
+                                          fontWeight: FontWeight.w400
+                                      ),)
+                                    ],
+                                  ),
                                 )
                               ],
                             ),
@@ -88,7 +97,7 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                         ),
                         InkWell(
                           onTap: () {
-                            Navigator.of(context).pushNamed('/sar');
+                            Navigator.of(context).pushNamed('/geetasholk');
                           },
                           child: Container(
                             margin: const EdgeInsets.only(top: 15,left: 20,right: 20),
@@ -110,12 +119,21 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                                     color: Colors.black38,
                                   ),
                                 ),
-                                SizedBox(width: 20,),
-                                Center(
-                                  child: Text('गीता सार',style: TextStyle(
-                                      fontSize: 40,
-                                      fontWeight: FontWeight.w400
-                                  ),),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 15,horizontal: 45),
+                                  child: Column(
+                                    children: [
+                                      //  SizedBox(width: 20,),
+                                      Text('दूसरा अध्याय',style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.w400
+                                      ),),
+                                      Text('सांख्ययोग',style: TextStyle(
+                                          fontSize: 35,
+                                          fontWeight: FontWeight.w400
+                                      ),)
+                                    ],
+                                  ),
                                 )
                               ],
                             ),
@@ -123,7 +141,7 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                         ),
                         InkWell(
                           onTap: () {
-                            Navigator.of(context).pushNamed('/mahaatmy');
+                            Navigator.of(context).pushNamed('/geetasholk');
                           },
                           child: Container(
                             margin: const EdgeInsets.only(top: 15,left: 20,right: 20),
@@ -145,12 +163,21 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                                     color: Colors.black38,
                                   ),
                                 ),
-                                SizedBox(width: 20,),
-                                Center(
-                                  child: Text('गीता महात्म्य',style: TextStyle(
-                                      fontSize: 40,
-                                      fontWeight: FontWeight.w400
-                                  ),),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 15,horizontal: 35),
+                                  child: Column(
+                                    children: [
+                                      //  SizedBox(width: 20,),
+                                      Text('तीसरा अध्याय',style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.w400
+                                      ),),
+                                      Text('कर्मयोग',style: TextStyle(
+                                          fontSize: 35,
+                                          fontWeight: FontWeight.w400
+                                      ),)
+                                    ],
+                                  ),
                                 )
                               ],
                             ),
@@ -158,7 +185,7 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                         ),
                         InkWell(
                           onTap: () {
-                            Navigator.of(context).pushNamed('/aarti');
+                            Navigator.of(context).pushNamed('/geetasholk');
                           },
                           child: Container(
                             margin: const EdgeInsets.only(top: 15,left: 20,right: 20),
@@ -180,12 +207,637 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                                     color: Colors.black38,
                                   ),
                                 ),
-                                SizedBox(width: 20,),
-                                Center(
-                                  child: Text('गीता आरती',style: TextStyle(
-                                      fontSize: 40,
-                                      fontWeight: FontWeight.w400
-                                  ),),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 15,horizontal: 15),
+                                  child: Column(
+                                    children: [
+                                      //  SizedBox(width: 20,),
+                                      Text('चौथा अध्याय',style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.w400
+                                      ),),
+                                      Text('ज्ञानकर्मसंन्यासयोग',style: TextStyle(
+                                          fontSize: 27,
+                                          fontWeight: FontWeight.w400
+                                      ),)
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        InkWell(
+                          onTap: () {
+                            Navigator.of(context).pushNamed('/geetasholk');
+                          },
+                          child: Container(
+                            margin: const EdgeInsets.only(top: 15,left: 20,right: 20),
+                            height: height*0.12,
+                            width: width,
+                            decoration: BoxDecoration(
+                                gradient: const LinearGradient(colors: [
+                                  Color(0xFFFDB316),
+                                  Color(0xFFFFFC341)
+                                ]),
+                                borderRadius: BorderRadius.circular(10)
+                            ),
+                            child: const Row(
+                              children: [
+                                Image(image: AssetImage('asset/img/logo5.png')),
+                                Padding(
+                                  padding: EdgeInsets.only(top: 10,bottom: 10),
+                                  child: VerticalDivider(
+                                    color: Colors.black38,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 15,horizontal: 15),
+                                  child: Column(
+                                    children: [
+                                      //  SizedBox(width: 20,),
+                                      Text('पाँचवाँ अध्याय',style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.w400
+                                      ),),
+                                      Text('कर्मसंन्यासयोग',style: TextStyle(
+                                          fontSize: 30,
+                                          fontWeight: FontWeight.w400
+                                      ),)
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        InkWell(
+                          onTap: () {
+                            Navigator.of(context).pushNamed('/geetasholk');
+                          },
+                          child: Container(
+                            margin: const EdgeInsets.only(top: 15,left: 20,right: 20),
+                            height: height*0.12,
+                            width: width,
+                            decoration: BoxDecoration(
+                                gradient: const LinearGradient(colors: [
+                                  Color(0xFFFDB316),
+                                  Color(0xFFFFFC341)
+                                ]),
+                                borderRadius: BorderRadius.circular(10)
+                            ),
+                            child: const Row(
+                              children: [
+                                Image(image: AssetImage('asset/img/logo6.png')),
+                                Padding(
+                                  padding: EdgeInsets.only(top: 10,bottom: 10),
+                                  child: VerticalDivider(
+                                    color: Colors.black38,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 15,horizontal: 15),
+                                  child: Column(
+                                    children: [
+                                      //  SizedBox(width: 20,),
+                                      Text('छठा अध्याय',style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.w400
+                                      ),),
+                                      Text('आत्मसंयमयोग',style: TextStyle(
+                                          fontSize: 30,
+                                          fontWeight: FontWeight.w400
+                                      ),)
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        InkWell(
+                          onTap: () {
+                            Navigator.of(context).pushNamed('/geetasholk');
+                          },
+                          child: Container(
+                            margin: const EdgeInsets.only(top: 15,left: 20,right: 20),
+                            height: height*0.12,
+                            width: width,
+                            decoration: BoxDecoration(
+                                gradient: const LinearGradient(colors: [
+                                  Color(0xFFFDB316),
+                                  Color(0xFFFFFC341)
+                                ]),
+                                borderRadius: BorderRadius.circular(10)
+                            ),
+                            child: const Row(
+                              children: [
+                                Image(image: AssetImage('asset/img/logo1.png')),
+                                Padding(
+                                  padding: EdgeInsets.only(top: 10,bottom: 10),
+                                  child: VerticalDivider(
+                                    color: Colors.black38,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 15,horizontal: 15),
+                                  child: Column(
+                                    children: [
+                                      //  SizedBox(width: 20,),
+                                      Text('सातवां अध्याय',style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.w400
+                                      ),),
+                                      Text('ज्ञानविज्ञानयोग',style: TextStyle(
+                                          fontSize: 30,
+                                          fontWeight: FontWeight.w400
+                                      ),)
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        InkWell(
+                          onTap: () {
+                            Navigator.of(context).pushNamed('/geetasholk');
+                          },
+                          child: Container(
+                            margin: const EdgeInsets.only(top: 15,left: 20,right: 20),
+                            height: height*0.12,
+                            width: width,
+                            decoration: BoxDecoration(
+                                gradient: const LinearGradient(colors: [
+                                  Color(0xFFFDB316),
+                                  Color(0xFFFFFC341)
+                                ]),
+                                borderRadius: BorderRadius.circular(10)
+                            ),
+                            child: const Row(
+                              children: [
+                                Image(image: AssetImage('asset/img/logo2.png')),
+                                Padding(
+                                  padding: EdgeInsets.only(top: 10,bottom: 10),
+                                  child: VerticalDivider(
+                                    color: Colors.black38,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 15,horizontal: 15),
+                                  child: Column(
+                                    children: [
+                                      //  SizedBox(width: 20,),
+                                      Text('आठवां अध्याय',style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.w400
+                                      ),),
+                                      Text('अक्षरब्रह्मयोग',style: TextStyle(
+                                          fontSize: 30,
+                                          fontWeight: FontWeight.w400
+                                      ),)
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        InkWell(
+                          onTap: () {
+                            Navigator.of(context).pushNamed('/geetasholk');
+                          },
+                          child: Container(
+                            margin: const EdgeInsets.only(top: 15,left: 20,right: 20),
+                            height: height*0.12,
+                            width: width,
+                            decoration: BoxDecoration(
+                                gradient: const LinearGradient(colors: [
+                                  Color(0xFFFDB316),
+                                  Color(0xFFFFFC341)
+                                ]),
+                                borderRadius: BorderRadius.circular(10)
+                            ),
+                            child: const Row(
+                              children: [
+                                Image(image: AssetImage('asset/img/logo 3.png')),
+                                Padding(
+                                  padding: EdgeInsets.only(top: 10,bottom: 10),
+                                  child: VerticalDivider(
+                                    color: Colors.black38,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 15,horizontal: 15),
+                                  child: Column(
+                                    children: [
+                                      //  SizedBox(width: 20,),
+                                      Text('नवां अध्याय',style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.w400
+                                      ),),
+                                      Text('राजविद्यागुह्ययोग',style: TextStyle(
+                                          fontSize: 30,
+                                          fontWeight: FontWeight.w400
+                                      ),)
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        InkWell(
+                          onTap: () {
+                            Navigator.of(context).pushNamed('/geetasholk');
+                          },
+                          child: Container(
+                            margin: const EdgeInsets.only(top: 15,left: 20,right: 20),
+                            height: height*0.12,
+                            width: width,
+                            decoration: BoxDecoration(
+                                gradient: const LinearGradient(colors: [
+                                  Color(0xFFFDB316),
+                                  Color(0xFFFFFC341)
+                                ]),
+                                borderRadius: BorderRadius.circular(10)
+                            ),
+                            child: const Row(
+                              children: [
+                                Image(image: AssetImage('asset/img/logo 4.png')),
+                                Padding(
+                                  padding: EdgeInsets.only(top: 10,bottom: 10),
+                                  child: VerticalDivider(
+                                    color: Colors.black38,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 15,horizontal: 15),
+                                  child: Column(
+                                    children: [
+                                      //  SizedBox(width: 20,),
+                                      Text('दसवां अध्याय',style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.w400
+                                      ),),
+                                      Text('विभूतियोग',style: TextStyle(
+                                          fontSize: 30,
+                                          fontWeight: FontWeight.w400
+                                      ),)
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        InkWell(
+                          onTap: () {
+                            Navigator.of(context).pushNamed('/geetasholk');
+                          },
+                          child: Container(
+                            margin: const EdgeInsets.only(top: 15,left: 20,right: 20),
+                            height: height*0.12,
+                            width: width,
+                            decoration: BoxDecoration(
+                                gradient: const LinearGradient(colors: [
+                                  Color(0xFFFDB316),
+                                  Color(0xFFFFFC341)
+                                ]),
+                                borderRadius: BorderRadius.circular(10)
+                            ),
+                            child: const Row(
+                              children: [
+                                Image(image: AssetImage('asset/img/logo5.png')),
+                                Padding(
+                                  padding: EdgeInsets.only(top: 10,bottom: 10),
+                                  child: VerticalDivider(
+                                    color: Colors.black38,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 15,horizontal: 15),
+                                  child: Column(
+                                    children: [
+                                      //  SizedBox(width: 20,),
+                                      Text('ग्याहरवां अध्याय',style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.w400
+                                      ),),
+                                      Text('विश्वरूपदर्शनयोग',style: TextStyle(
+                                          fontSize: 30,
+                                          fontWeight: FontWeight.w400
+                                      ),)
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        InkWell(
+                          onTap: () {
+                            Navigator.of(context).pushNamed('/geetasholk');
+                          },
+                          child: Container(
+                            margin: const EdgeInsets.only(top: 15,left: 20,right: 20),
+                            height: height*0.12,
+                            width: width,
+                            decoration: BoxDecoration(
+                                gradient: const LinearGradient(colors: [
+                                  Color(0xFFFDB316),
+                                  Color(0xFFFFFC341)
+                                ]),
+                                borderRadius: BorderRadius.circular(10)
+                            ),
+                            child: const Row(
+                              children: [
+                                Image(image: AssetImage('asset/img/logo6.png')),
+                                Padding(
+                                  padding: EdgeInsets.only(top: 10,bottom: 10),
+                                  child: VerticalDivider(
+                                    color: Colors.black38,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 15,horizontal: 15),
+                                  child: Column(
+                                    children: [
+                                      //  SizedBox(width: 20,),
+                                      Text('बारहवां अध्याय',style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.w400
+                                      ),),
+                                      Text('भक्तियो',style: TextStyle(
+                                          fontSize: 35,
+                                          fontWeight: FontWeight.w400
+                                      ),)
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        InkWell(
+                          onTap: () {
+                            Navigator.of(context).pushNamed('/geetasholk');
+                          },
+                          child: Container(
+                            margin: const EdgeInsets.only(top: 15,left: 20,right: 20),
+                            height: height*0.12,
+                            width: width,
+                            decoration: BoxDecoration(
+                                gradient: const LinearGradient(colors: [
+                                  Color(0xFFFDB316),
+                                  Color(0xFFFFFC341)
+                                ]),
+                                borderRadius: BorderRadius.circular(10)
+                            ),
+                            child: const Row(
+                              children: [
+                                Image(image: AssetImage('asset/img/logo1.png')),
+                                Padding(
+                                  padding: EdgeInsets.only(top: 10,bottom: 10),
+                                  child: VerticalDivider(
+                                    color: Colors.black38,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 15,horizontal: 15),
+                                  child: Column(
+                                    children: [
+                                      //  SizedBox(width: 20,),
+                                      Text('तेहरवां अध्याय',style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.w400
+                                      ),),
+                                      Text('क्षेत्र-क्षेत्रज्ञविभागयो',style: TextStyle(
+                                          fontSize: 27,
+                                          fontWeight: FontWeight.w400
+                                      ),)
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        InkWell(
+                          onTap: () {
+                            Navigator.of(context).pushNamed('/geetasholk');
+                          },
+                          child: Container(
+                            margin: const EdgeInsets.only(top: 15,left: 20,right: 20),
+                            height: height*0.12,
+                            width: width,
+                            decoration: BoxDecoration(
+                                gradient: const LinearGradient(colors: [
+                                  Color(0xFFFDB316),
+                                  Color(0xFFFFFC341)
+                                ]),
+                                borderRadius: BorderRadius.circular(10)
+                            ),
+                            child: const Row(
+                              children: [
+                                Image(image: AssetImage('asset/img/logo2.png')),
+                                Padding(
+                                  padding: EdgeInsets.only(top: 10,bottom: 10),
+                                  child: VerticalDivider(
+                                    color: Colors.black38,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 15,horizontal: 15),
+                                  child: Column(
+                                    children: [
+                                      //  SizedBox(width: 20,),
+                                      Text('चौदहवां अध्याय',style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.w400
+                                      ),),
+                                      Text('गुणत्रयविभागयोग',style: TextStyle(
+                                          fontSize: 28,
+                                          fontWeight: FontWeight.w400
+                                      ),)
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        InkWell(
+                          onTap: () {
+                            Navigator.of(context).pushNamed('/geetasholk');
+                          },
+                          child: Container(
+                            margin: const EdgeInsets.only(top: 15,left: 20,right: 20),
+                            height: height*0.12,
+                            width: width,
+                            decoration: BoxDecoration(
+                                gradient: const LinearGradient(colors: [
+                                  Color(0xFFFDB316),
+                                  Color(0xFFFFFC341)
+                                ]),
+                                borderRadius: BorderRadius.circular(10)
+                            ),
+                            child: const Row(
+                              children: [
+                                Image(image: AssetImage('asset/img/logo 3.png')),
+                                Padding(
+                                  padding: EdgeInsets.only(top: 10,bottom: 10),
+                                  child: VerticalDivider(
+                                    color: Colors.black38,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 15,horizontal: 15),
+                                  child: Column(
+                                    children: [
+                                      //  SizedBox(width: 20,),
+                                      Text('पंद्रहवां अध्याय',style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.w400
+                                      ),),
+                                      Text('पुरुषोत्तमयोग',style: TextStyle(
+                                          fontSize: 30,
+                                          fontWeight: FontWeight.w400
+                                      ),)
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        InkWell(
+                          onTap: () {
+                            Navigator.of(context).pushNamed('/geetasholk');
+                          },
+                          child: Container(
+                            margin: const EdgeInsets.only(top: 15,left: 20,right: 20),
+                            height: height*0.12,
+                            width: width,
+                            decoration: BoxDecoration(
+                                gradient: const LinearGradient(colors: [
+                                  Color(0xFFFDB316),
+                                  Color(0xFFFFFC341)
+                                ]),
+                                borderRadius: BorderRadius.circular(10)
+                            ),
+                            child: const Row(
+                              children: [
+                                Image(image: AssetImage('asset/img/logo 4.png')),
+                                Padding(
+                                  padding: EdgeInsets.only(top: 10,bottom: 10),
+                                  child: VerticalDivider(
+                                    color: Colors.black38,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 15,horizontal: 15),
+                                  child: Column(
+                                    children: [
+                                      //  SizedBox(width: 20,),
+                                      Text('सोलहवां अध्याय',style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.w400
+                                      ),),
+                                      Text('दैवासुरसम्पद्विभागयोगः',style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.w400
+                                      ),)
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        InkWell(
+                          onTap: () {
+                            Navigator.of(context).pushNamed('/geetasholk');
+                          },
+                          child: Container(
+                            margin: const EdgeInsets.only(top: 15,left: 20,right: 20),
+                            height: height*0.12,
+                            width: width,
+                            decoration: BoxDecoration(
+                                gradient: const LinearGradient(colors: [
+                                  Color(0xFFFDB316),
+                                  Color(0xFFFFFC341)
+                                ]),
+                                borderRadius: BorderRadius.circular(10)
+                            ),
+                            child: const Row(
+                              children: [
+                                Image(image: AssetImage('asset/img/logo5.png')),
+                                Padding(
+                                  padding: EdgeInsets.only(top: 10,bottom: 10),
+                                  child: VerticalDivider(
+                                    color: Colors.black38,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 15,horizontal: 15),
+                                  child: Column(
+                                    children: [
+                                      //  SizedBox(width: 20,),
+                                      Text('सत्हरवां अध्याय',style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.w400
+                                      ),),
+                                      Text('श्रद्धात्रयविभागयोग',style: TextStyle(
+                                          fontSize: 28,
+                                          fontWeight: FontWeight.w400
+                                      ),)
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        InkWell(
+                          onTap: () {
+                            Navigator.of(context).pushNamed('/geetasholk');
+                          },
+                          child: Container(
+                            margin: const EdgeInsets.only(top: 15,left: 20,right: 20),
+                            height: height*0.12,
+                            width: width,
+                            decoration: BoxDecoration(
+                                gradient: const LinearGradient(colors: [
+                                  Color(0xFFFDB316),
+                                  Color(0xFFFFFC341)
+                                ]),
+                                borderRadius: BorderRadius.circular(10)
+                            ),
+                            child: const Row(
+                              children: [
+                                Image(image: AssetImage('asset/img/logo6.png')),
+                                Padding(
+                                  padding: EdgeInsets.only(top: 10,bottom: 10),
+                                  child: VerticalDivider(
+                                    color: Colors.black38,
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsets.symmetric(vertical: 15,horizontal: 15),
+                                  child: Column(
+                                    children: [
+                                      //  SizedBox(width: 20,),
+                                      Text('अठ्ठहारवां अध्याय',style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.w400
+                                      ),),
+                                      Text('मोक्षसंन्यासयोग',style: TextStyle(
+                                          fontSize: 30,
+                                          fontWeight: FontWeight.w400
+                                      ),)
+                                    ],
+                                  ),
                                 )
                               ],
                             ),

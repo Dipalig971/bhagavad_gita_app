@@ -2,6 +2,7 @@ import 'package:bhagavad_gita_app/view/screen/bhagawat%20geeta.dart';
 import 'package:bhagavad_gita_app/view/screen/geeta%20aarti.dart';
 import 'package:bhagavad_gita_app/view/screen/geeta%20mahaatmy.dart';
 import 'package:bhagavad_gita_app/view/screen/geeta%20sar.dart';
+import 'package:bhagavad_gita_app/view/screen/gitasholk.dart';
 import 'package:bhagavad_gita_app/view/screen/homescreen.dart';
 import 'package:flutter/material.dart';
 
@@ -26,6 +27,7 @@ class Bhagavad_Gita_app extends StatelessWidget {
         '/sar':(context) => Geeta_sar(),
         '/mahaatmy':(context) => Geeta_mahaatmy(),
         '/aarti':(context) => Geeta_aarti(),
+        '/geetasholk':(context) => GitaSholk(),
       },
     );
   }
