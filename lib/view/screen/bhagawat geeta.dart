@@ -1,3 +1,4 @@
+import 'package:bhagavad_gita_app/view/screen/gitasholk.dart';
 import 'package:flutter/material.dart';
 
 class Bhagawat_geeta extends StatefulWidget {
@@ -53,6 +54,7 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                       children: [
                         InkWell(
                           onTap: () {
+                            geetasholk=0;
                             Navigator.of(context).pushNamed('/geetasholk');
                           },
                           child: Container(
@@ -97,6 +99,7 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                         ),
                         InkWell(
                           onTap: () {
+                            geetasholk=1;
                             Navigator.of(context).pushNamed('/geetasholk');
                           },
                           child: Container(
@@ -141,6 +144,7 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                         ),
                         InkWell(
                           onTap: () {
+                            geetasholk=2;
                             Navigator.of(context).pushNamed('/geetasholk');
                           },
                           child: Container(
@@ -185,6 +189,7 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                         ),
                         InkWell(
                           onTap: () {
+                            geetasholk=3;
                             Navigator.of(context).pushNamed('/geetasholk');
                           },
                           child: Container(
@@ -229,6 +234,7 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                         ),
                         InkWell(
                           onTap: () {
+                            geetasholk=4;
                             Navigator.of(context).pushNamed('/geetasholk');
                           },
                           child: Container(
@@ -273,6 +279,7 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                         ),
                         InkWell(
                           onTap: () {
+                            geetasholk=5;
                             Navigator.of(context).pushNamed('/geetasholk');
                           },
                           child: Container(
@@ -317,6 +324,7 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                         ),
                         InkWell(
                           onTap: () {
+                            geetasholk=6;
                             Navigator.of(context).pushNamed('/geetasholk');
                           },
                           child: Container(
@@ -361,6 +369,7 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                         ),
                         InkWell(
                           onTap: () {
+                            geetasholk=7;
                             Navigator.of(context).pushNamed('/geetasholk');
                           },
                           child: Container(
@@ -405,6 +414,7 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                         ),
                         InkWell(
                           onTap: () {
+                            geetasholk=8;
                             Navigator.of(context).pushNamed('/geetasholk');
                           },
                           child: Container(
@@ -449,6 +459,7 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                         ),
                         InkWell(
                           onTap: () {
+                            geetasholk=9;
                             Navigator.of(context).pushNamed('/geetasholk');
                           },
                           child: Container(
@@ -493,6 +504,7 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                         ),
                         InkWell(
                           onTap: () {
+                            geetasholk=10;
                             Navigator.of(context).pushNamed('/geetasholk');
                           },
                           child: Container(
@@ -537,6 +549,7 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                         ),
                         InkWell(
                           onTap: () {
+                            geetasholk=11;
                             Navigator.of(context).pushNamed('/geetasholk');
                           },
                           child: Container(
@@ -581,6 +594,7 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                         ),
                         InkWell(
                           onTap: () {
+                            geetasholk=12;
                             Navigator.of(context).pushNamed('/geetasholk');
                           },
                           child: Container(
@@ -625,6 +639,7 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                         ),
                         InkWell(
                           onTap: () {
+                            geetasholk=13;
                             Navigator.of(context).pushNamed('/geetasholk');
                           },
                           child: Container(
@@ -669,6 +684,7 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                         ),
                         InkWell(
                           onTap: () {
+                            geetasholk=14;
                             Navigator.of(context).pushNamed('/geetasholk');
                           },
                           child: Container(
@@ -713,6 +729,7 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                         ),
                         InkWell(
                           onTap: () {
+                            geetasholk=15;
                             Navigator.of(context).pushNamed('/geetasholk');
                           },
                           child: Container(
@@ -757,6 +774,7 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                         ),
                         InkWell(
                           onTap: () {
+                            geetasholk=16;
                             Navigator.of(context).pushNamed('/geetasholk');
                           },
                           child: Container(
@@ -801,6 +819,7 @@ class _Bhagawat_geetaState extends State<Bhagawat_geeta> {
                         ),
                         InkWell(
                           onTap: () {
+                            geetasholk=17;
                             Navigator.of(context).pushNamed('/geetasholk');
                           },
                           child: Container(

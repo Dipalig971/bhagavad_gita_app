@@ -59,7 +59,7 @@ class _Geeta_sarState extends State<Geeta_sar> {
                             topRight: Radius.circular(25))
                     ),
                     child: Column(
-                      children: List.generate(list[0]['adhaya'].length, (index) =>box(index)),
+                      children: List.generate(list[1]['adhaya'].length, (index) =>box(index)),
                     )
                   ),
                 ],
@@ -90,20 +90,20 @@ class _Geeta_sarState extends State<Geeta_sar> {
         padding:  const EdgeInsets.symmetric(vertical: 30),
         child: Column(
           children: [
-            Text(list[0]['adhaya'][index]['id'], style: const TextStyle(
+            Text(list[1]['adhaya'][index]['id'], style: const TextStyle(
                 color: Colors.black,
                 fontSize: 26,
                 fontWeight: FontWeight.w400
             ),),
             const SizedBox(height: 10,),
-            Text(list[0]['adhaya'][index]['name'], style: const TextStyle(
+            Text(list[1]['adhaya'][index]['name'], style: const TextStyle(
                 color: Colors.black,
                 fontSize: 35,
                 fontWeight: FontWeight.w400
             ),),
             const SizedBox(height: 5,),
             Text(
-              list[0]['adhaya'][index]['mean'],
+              list[1]['adhaya'][index]['mean'],
               textAlign: TextAlign.center,
               style: const TextStyle(
                   color: Colors.black,

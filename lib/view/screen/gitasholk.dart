@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../../utills/listsar.dart';
 
@@ -46,7 +47,7 @@ class _GitaSholkState extends State<GitaSholk> {
                             fit: BoxFit.cover)),
                   ),
                   Container(
-                      height: height * 15.3,
+                      height: height * 30.9,
                       width: width,
                       decoration: const BoxDecoration(
                           color: Color(0xFFFEF2DA),
@@ -55,7 +56,7 @@ class _GitaSholkState extends State<GitaSholk> {
                               topRight: Radius.circular(25))),
                       child: Column(
                         children: List.generate(
-                            list[0]['geeta'][geetasholk]['sholks'].length, (index) => box(index)),
+                            list[0]['Bhaags'][geetasholk]['shloks'].length, (index) => box(index)),
                       )),
                 ],
               ),
@@ -84,7 +85,7 @@ class _GitaSholkState extends State<GitaSholk> {
           children: [
             if(index==0)
               Text(
-                list[0]['geeta'][geetasholk]['id'],
+                list[0]['Bhaags'][geetasholk]['id'],
                 style: const TextStyle(
                     color: Colors.black,
                     fontSize: 26,
@@ -95,19 +96,18 @@ class _GitaSholkState extends State<GitaSholk> {
             ),
             if(index==0)
               Text(
-                list[0]['geeta'][geetasholk]['name'],
+                list[0]['Bhaags'][geetasholk]['name'],
                 style: const TextStyle(
                     color: Colors.black,
                     fontSize: 35,
-                    fontWeight: FontWeight.w400),
+                    fontWeight: FontWeight.w400
+                ),
               ),
-            // // const SizedBox(
-            // //   height: 10
-            // ),
+
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 10),
               child: Text(
-                list[0]['geeta'][geetasholk]['sholks'][index]['sholk'],
+                list[0]['Bhaags'][geetasholk]['shloks'][index]['shlok'],
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                     color: Colors.black,
@@ -125,7 +125,7 @@ class _GitaSholkState extends State<GitaSholk> {
             Padding(
               padding: const EdgeInsets.all(10),
               child: Text(
-                list[0]['geeta'][geetasholk]['sholks'][index]['mean'],
+                list[0]['Bhaags'][geetasholk]['shloks'][index]['meaning'],
                 textAlign: TextAlign.center,
                 style: const TextStyle(
                     color: Colors.black,
@@ -139,15 +139,18 @@ class _GitaSholkState extends State<GitaSholk> {
               decoration: const BoxDecoration(
                   color: Colors.black
               ),
-              child: Row(
+              child:  Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Text('Copy',style: TextStyle(
-                    color: Colors.orange,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 23
-                  ),),
-                  Text('Share',style: TextStyle(
+                 TextButton(onPressed: () {
+                   Clipboard.setData(ClipboardData(text: list[0]['Bhaags'][geetasholk]['shloks'][index]['meaning'],));
+                   ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Copied')));
+                 }, child: const Text('Copy',style: TextStyle(
+                     color: Colors.orange,
+                     fontWeight: FontWeight.bold,
+                     fontSize: 23
+                 ),),),
+                  const Text('Share',style: TextStyle(
                       color: Colors.orange,
                       fontWeight: FontWeight.bold,
                       fontSize: 23
