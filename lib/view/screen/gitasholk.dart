@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:share_extend/share_extend.dart';
 
 import '../../utills/listsar.dart';
 
@@ -47,17 +48,19 @@ class _GitaSholkState extends State<GitaSholk> {
                             fit: BoxFit.cover)),
                   ),
                   Container(
-                      height: height * 30.9,
-                      width: width,
-                      decoration: const BoxDecoration(
-                          color: Color(0xFFFEF2DA),
-                          borderRadius: BorderRadius.only(
-                              topLeft: Radius.circular(25),
-                              topRight: Radius.circular(25))),
-                      child: Column(
-                        children: List.generate(
-                            list[0]['Bhaags'][geetasholk]['shloks'].length, (index) => box(index)),
-                      )),
+                    height: height * 30.9,
+                    width: width,
+                    decoration: const BoxDecoration(
+                        color: Color(0xFFFEF2DA),
+                        borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(25),
+                            topRight: Radius.circular(25))),
+                    child: Column(
+                      children: List.generate(
+                          list[0]['Bhaags'][geetasholk]['shloks'].length,
+                          (index) => box(index)),
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -72,18 +75,18 @@ class _GitaSholkState extends State<GitaSholk> {
     return Container(
       margin: const EdgeInsets.only(top: 20, left: 7, right: 7, bottom: 5),
       //height: height * 0.5,
-     // width: double.infinity,
+      // width: double.infinity,
       decoration: BoxDecoration(
-          color: const Color(0xFFFDB316),
-          borderRadius: BorderRadius.circular(10),
-          // border:
-          //     const Border(bottom: BorderSide(color: Colors.black, width: 10))
+        color: const Color(0xFFFDB316),
+        borderRadius: BorderRadius.circular(10),
+        // border:
+        //     const Border(bottom: BorderSide(color: Colors.black, width: 10))
       ),
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 1),
         child: Column(
           children: [
-            if(index==0)
+            if (index == 0)
               Text(
                 list[0]['Bhaags'][geetasholk]['id'],
                 style: const TextStyle(
@@ -94,14 +97,13 @@ class _GitaSholkState extends State<GitaSholk> {
             const SizedBox(
               height: 10,
             ),
-            if(index==0)
+            if (index == 0)
               Text(
                 list[0]['Bhaags'][geetasholk]['name'],
                 style: const TextStyle(
                     color: Colors.black,
                     fontSize: 35,
-                    fontWeight: FontWeight.w400
-                ),
+                    fontWeight: FontWeight.w400),
               ),
 
             Padding(
@@ -116,12 +118,12 @@ class _GitaSholkState extends State<GitaSholk> {
               ),
             ),
             const Padding(
-              padding: EdgeInsets.only(right: 10,left: 10),
+              padding: EdgeInsets.only(right: 10, left: 10),
               child: Divider(
                 color: Colors.black26,
               ),
             ),
-           // const SizedBox(height: 20,),
+            // const SizedBox(height: 20,),
             Padding(
               padding: const EdgeInsets.all(10),
               child: Text(
@@ -136,25 +138,43 @@ class _GitaSholkState extends State<GitaSholk> {
             Container(
               height: 60,
               width: 450,
-              decoration: const BoxDecoration(
-                  color: Colors.black
-              ),
-              child:  Row(
+              decoration: const BoxDecoration(color: Colors.black),
+              child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                 TextButton(onPressed: () {
-                   Clipboard.setData(ClipboardData(text: list[0]['Bhaags'][geetasholk]['shloks'][index]['meaning'],));
-                   ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Copied')));
-                 }, child: const Text('Copy',style: TextStyle(
-                     color: Colors.orange,
-                     fontWeight: FontWeight.bold,
-                     fontSize: 23
-                 ),),),
-                  const Text('Share',style: TextStyle(
-                      color: Colors.orange,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 23
-                  ),)
+                  TextButton(
+                    onPressed: () {
+                      Clipboard.setData(ClipboardData(
+                        text: list[0]['Bhaags'][geetasholk]['shloks'][index]
+                            ['meaning'],
+                      ));
+                      ScaffoldMessenger.of(context)
+                          .showSnackBar(SnackBar(content: Text('Copied')));
+                    },
+                    child: const Text(
+                      'Copy',
+                      style: TextStyle(
+                        color: Colors.orange,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 23,
+                      ),
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      ShareExtend.share(
+                        '${list[0]['Bhaags'][geetasholk]['shloks'][index]['meaning']}',
+                        'Bhagawat geeta',
+                      );
+                    },
+                    child: const Text(
+                      'Share',
+                      style: TextStyle(
+                          color: Colors.orange,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 23),
+                    ),
+                  )
                 ],
               ),
             )
