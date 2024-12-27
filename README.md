@@ -1,19 +1,15 @@
-# bhagavad_gita_app
+# Bhagavad Gita App 📖✨
+The Bhagavad Gita App is a spiritual and educational application designed to help users explore the timeless wisdom of the Bhagavad Gita. The app provides access to the full text of the Gita, along with translations, explanations, and features to share its teachings with others.
 
-A new Flutter project.
+# Features 🌟
+## 1. Complete Bhagavad Gita Text
+- Full text of all 18 chapters and 700 verses.
+- Original Sanskrit verses along with their English/Hindi translations.
+- Detailed commentary and explanations for deeper understanding.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 2. Favorites
+- Mark your favorite verses and save them for quick access.
+- Organize your favorites into custom categories (e.g., Karma Yoga, Bhakti Yoga).
 
 <p>
   <img src="https://github.com/Dipalig971/bhagavad_gita_app/assets/143181151/82fcb7b9-60b7-455b-8346-60a35c5284a0" width=25% height=35%>
